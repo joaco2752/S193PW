@@ -1,6 +1,6 @@
 
 @extends('layouts.plantilla')
-@section('titulo','clientes')
+@section('titulo','Clientes')
 
 @section('contenido')
 
@@ -18,7 +18,7 @@
 
         <div class="card-body">
             <h5 class="fw-bold"> romo.joaquin9999@outlook.com</h5>
-            <h5 class="fw-medium">442823543</h5>
+            <h5 class="fw-medium">4428235434</h5>
             <p class="card-text fw-lighter"> </p>
 
 
