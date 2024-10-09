@@ -1,7 +1,10 @@
 
 @extends('layouts.plantilla')
+@section('titulo','clientes')
 
 @section('contenido')
+
+
 
     {{-- Inicia tarjetaCliente --}}
     <div class="container mt-5 col-md-8">

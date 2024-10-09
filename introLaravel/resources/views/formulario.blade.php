@@ -1,7 +1,10 @@
 
 @extends('layouts.plantilla')
+@section('titulo', 'formulario')
 
 @section('contenido')
+
+
 
 
 
