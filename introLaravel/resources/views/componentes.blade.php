@@ -4,12 +4,12 @@
 
 @section('contenido')
 
-<x-Card encabezado="Componente" titulo="Dinamico" textoBoton="Guardar">
+<x-card encabezado="Componente" titulo="Dinamico" textoBoton="Guardar">
     Soy el contenido del primero
-</x-Card>
+</x-card>
 
-<x-Card encabezado="Componente 2" titulo="Dinamico 2" textoBoton="No Guardar">
+<x-card encabezado="Componente 2" titulo="Dinamico 2" textoBoton="No Guardar">
     Otro gaaaato!!!
-</x-Card>
+</x-card>
 
 @endsection
