@@ -12,4 +12,7 @@
     Otro gaaaato!!!
 </x-card>
 
+<x-Alert tipo="danger">rojo</x-Alert>
+<x-Alert tipo="warning">amarillo</x-Alert>
+
 @endsection
