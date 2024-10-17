@@ -50,7 +50,7 @@
   <div class="card-body">
     <h5 class="card-title">Joaquin Alejandro Romo Zarraga</h5>
     <p class="card-text">S193<br>Asignatura: Programación Web<br>Universidad Politecnica de Queretaro</p>
-    <a href="#" class="btn btn-primary"></a>
+    <a href="/repasar" class="btn btn-primary">Repaso 1</a>
   </div>
 </div>
 
