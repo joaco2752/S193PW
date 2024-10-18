@@ -49,7 +49,7 @@
 
   <div class="card-body">
     <h5 class="card-title">Joaquin Alejandro Romo Zarraga</h5>
-    <p class="card-text">S193<br>Asignatura: Programación Web<br>Universidad Politecnica de Queretaro</p>
+    <p class="card-text">S193<br>Asignatura: Programación Web<br>Universidad Politecnica de Queretaro<br>Telefono: 4426153457<br>Matricula: 122044319</p>
     <a href="/repasar" class="btn btn-primary">Repaso 1</a>
   </div>
 </div>
