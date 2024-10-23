@@ -24,7 +24,7 @@ class ControladorVistas extends Controller
         return view('clientes');
     }
 
-    public function procesarCliente(Request $peticion)
+    /* public function procesarCliente(Request $peticion)
     {
         
         /* return 'Si llego la info del Cliente :)'; */
@@ -41,5 +41,26 @@ class ControladorVistas extends Controller
         //url del origen la peticion
         /* return $peticion->ip(); */
         
+ /*    } */ 
+
+    public function procesarCliente(Request $peticion)
+    {
+        // respuestas de redireccion
+        /* return redirect('/'); */
+
+        //redireccion usando el nombre de la ruta
+        //return redirect()->route('rutaClientes');
+
+        // redireccion al origen de la peticion
+        //return back();
+
+        //redireccion con variable adjunta
+        /* $id= [['usuario'=>1],['usuario'=>2]];
+
+        return view('formulario',compact('id')); */
+
+        $usuario= $peticion->input('txtnombre');
+        session()->flash('exito','Se guardo el usuario: '.$usuario);
+        return to_route('rutaFormulario');
     }
 }
