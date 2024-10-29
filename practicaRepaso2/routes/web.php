@@ -12,5 +12,6 @@ Route::get('/registrar', function () {
 })->name('rutaRegistro'); */
 
 
-Route::get('/', [Controlador::class, 'principio'])->name('rutaPrincipal');
+Route::get('/', [Controlador::class, 'principio'])->name('rutaPrincipio');
 Route::get('/registrar', [Controlador::class, 'register'])->name('rutaRegistro');
+Route::post('/enviarRegistro', [Controlador::class, 'procesarRegistro'])->name('rutaEnviarRegistro');

@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('rutaPrincipal')}}">Principal</a>
+            <a class="navbar-brand" href="{{ route('rutaPrincipio')}}">Principal</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
 

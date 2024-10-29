@@ -9,7 +9,8 @@
             Registro de Libro
         </div>
 
-    <form class="row g-3" action="" method="POST">
+    <form class="row g-3" action="/enviarRegistro" method="POST">
+        @csrf
     <div class="col-md-6">
         <label for="isbn" class="form-label">ISBN (Identificador Libro):</label>
         <input type="text" class="form-control" name="txtisbn">

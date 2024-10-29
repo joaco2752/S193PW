@@ -15,4 +15,9 @@ class Controlador extends Controller
     {
         return view('registro');
     }
+
+    public function procesarRegistro(Request $peticion)
+    {
+        return view('registro');
+    }
 }
