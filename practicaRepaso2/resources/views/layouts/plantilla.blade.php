@@ -10,24 +10,18 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('')}}">Registro</a>
+            <a class="navbar-brand" href="{{ route('rutaPrincipal')}}">Principal</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('') }}" aria-current="page" href="{{ route('')}}"></a>
+                    <a class="nav-link {{ request()->routeIs('rutaRegistro') }}" aria-current="page" href="{{ route('rutaRegistro')}}">Registro Libro</a>
                 </li>
                 </ul>
             </div>
         </div>
-    </nav>
+</nav>
 
-<div class="card-footer text-body-secondary">
-        <p>Biblioteca LastRead<br>
-        Copyright © 2024 Biblioteca LastRead<br>
-        28/10/2024
-        </p>
-</div>
 
 
     @yield('contenido')

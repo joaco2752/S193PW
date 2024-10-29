@@ -3,7 +3,7 @@
 
 @section('contenido')
 
-
+<div class="container mt-4">
     <div class="card font-monospace">
         <div class="card-header fs-5 text-center text-primary">
             Registro de Libro
@@ -42,5 +42,6 @@
     <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Registrar</button>
     </div>
     </form>
+</div>
 
 @endsection
