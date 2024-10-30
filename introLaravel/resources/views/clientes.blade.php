@@ -25,8 +25,8 @@
         </div>
 
         <div class="card-footer text-muted">
-            <button type="submit" class="btn btn-warning btn-sm"> Actualizar</button>
-            <button type="submit" class="btn btn-danger btn-sm"> Eliminar  </button>
+            <button type="submit" class="btn btn-warning btn-sm">{{__('Update')}}</button>
+            <button type="submit" class="btn btn-danger btn-sm">{{__('Delete')}}</button>
         </div>
     </div>
     {{-- Finaliza tarjetaCliente --}}
