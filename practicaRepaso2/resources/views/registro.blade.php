@@ -4,12 +4,17 @@
 @section('contenido')
 
 <div class="container mt-4">
+
+
+
+
+
     <div class="card font-monospace">
         <div class="card-header fs-5 text-center text-primary">
             Registro de Libro
         </div>
 
-    <form class="row g-3" action="/enviarRegistro" method="POST">
+    <form class="row g-3" action="/enviarRegistroLibro" method="POST">
         @csrf
     <div class="col-md-6">
         <label for="isbn" class="form-label">ISBN (Identificador Libro):</label>
@@ -40,7 +45,7 @@
         <input type="text" class="form-control" name="txtcorreo">
     </div>
     <div class="d-inline-flex gap-1">
-    <button type="button" class="btn btn-primary" disabled data-bs-toggle="button">Registrar</button>
+    <button type="submit" class="btn btn-primary">Registrar</button>
     </div>
     </form>
 </div>
