@@ -29,13 +29,15 @@
 
 
     @yield('contenido')
+
             
-            <div class="bg-dark text-white mt-5 py-3">
+            <footer class="bg-dark text-white mt-5 py-3">
             <blockquote class="blockquote mb-0">
             <p>Biblioteca The Last Read</p>
                 <footer>Copyright &copy; 29/10/2024</cite></footer>
                 </blockquote>
-                </div>
+            </footer>
+    
             
 </body>
 </html>
