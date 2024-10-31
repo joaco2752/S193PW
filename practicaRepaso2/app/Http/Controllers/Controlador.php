@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validadorRegistro;
 
 class Controlador extends Controller
 {
@@ -16,8 +17,10 @@ class Controlador extends Controller
         return view('registro');
     }
 
-    public function procesarRegistro(Request $peticion)
+    public function procesarRegistro(validadorRegistro $peticion)
     {
-        return view('registro');
+        $nombreLibro = $peticion->input('txttitulo');
+        session()->flash('perfecto','Todo Correcto: Libro '.$nombreLibro.' guardado');
+        return to_route('rutaRegistro');
     }
 }
