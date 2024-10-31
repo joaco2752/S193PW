@@ -11,12 +11,12 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('rutaPrincipio')}}">Principal</a>
+            <a class="navbar-brand" href="{{ route('rutaPrincipio')}}">{{__('Principal')}}</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('rutaRegistro')?'text-light':'' }}" aria-current="page" href="{{ route('rutaRegistro')}}">Registro Libro</a>
+                    <a class="nav-link {{ request()->routeIs('rutaRegistro')?'text-light':'' }}" aria-current="page" href="{{ route('rutaRegistro')}}">{{__('Registro Libro')}}</a>
                 </li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@
             
             <footer class="bg-dark text-white mt-5 py-3">
             <blockquote class="blockquote mb-0">
-            <p>Biblioteca The Last Read</p>
+            <p>{{__('Biblioteca The Last Read')}}</p>
                 <footer>Copyright &copy; 29/10/2024</cite></footer>
                 </blockquote>
             </footer>
