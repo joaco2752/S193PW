@@ -34,7 +34,7 @@
             <footer class="bg-dark text-white mt-5 py-3">
             <blockquote class="blockquote mb-0">
             <p>{{__('Biblioteca The Last Read')}}</p>
-                <footer>Copyright &copy; 29/10/2024</cite></footer>
+                <footer>Copyright &copy; 31/10/2024</cite></footer>
                 </blockquote>
             </footer>
     
