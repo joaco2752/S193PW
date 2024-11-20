@@ -41,8 +41,6 @@ class clienteController extends Controller
             "updated_at"=>Carbon::now()
         ]);
 
-        $usuario=$request->input('txtnombre');
-        session()->flash('exito','Se guardo el usuario: '.$usuario);
         return to_route('rutaFormulario');
     }
 
@@ -83,8 +81,9 @@ class clienteController extends Controller
                 'correo' => $request->input('txtcorreo'),
                 'telefono' => $request->input('txttelefono'),
             ]);
-    
-        return to_route('rutaClientes')->with('success', 'Cliente actualizado con éxito.');
+            $actualizar=$request->input('txtnombre');
+            session()->flash('exito','Se guardo el usuario: '.$actualizar);
+            return to_route('rutaClientes');
     }
 
     /**
@@ -92,6 +91,8 @@ class clienteController extends Controller
      */
     public function destroy(string $id)
     {
-        
+        DB::table('clientes')->where('id', $id)->delete();
+        session()->flash('seguro','Se ha eliminado el usuario');
+        return to_route('rutaClientes');
     }
 }
