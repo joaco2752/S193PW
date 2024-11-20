@@ -29,7 +29,10 @@
         </div>
 
         <div class="card-footer text-muted">
+            <form action="{{ route('rutaFormularioEditar',$cliente->id)}}">
             <button type="submit" class="btn btn-warning btn-sm">{{__('Update')}}</button>
+            </form>
+
             <button type="submit" class="btn btn-danger btn-sm">{{__('Delete')}}</button>
         </div>
     </div>

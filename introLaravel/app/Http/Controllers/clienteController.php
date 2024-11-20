@@ -59,7 +59,8 @@ class clienteController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $editar = DB::table('clientes')->where('id', $id)->first();
+        return view('formularioEditar', compact('editar'));
     }
 
     /**
@@ -67,7 +68,23 @@ class clienteController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'txtnombre' => 'required|string|max:255',
+            'txtapellido' => 'required|string|max:255',
+            'txtcorreo' => 'required|email|max:255',
+            'txttelefono' => 'required|string|max:20',
+        ]);
+    
+        DB::table('clientes')
+            ->where('id', $id)
+            ->update([
+                'nombre' => $request->input('txtnombre'),
+                'apellido' => $request->input('txtapellido'),
+                'correo' => $request->input('txtcorreo'),
+                'telefono' => $request->input('txttelefono'),
+            ]);
+    
+        return to_route('rutaClientes')->with('success', 'Cliente actualizado con éxito.');
     }
 
     /**
@@ -75,6 +92,6 @@ class clienteController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        
     }
 }
