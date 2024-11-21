@@ -9,7 +9,7 @@
 
 <div class="card font-monospace">
             <div class="card-header fs-5 text-center text-primary">
-                 {{__('Registro de Clientes')}}
+                 Update Customer
             </div>
 
             <div class="card-body text-justify">

@@ -41,6 +41,8 @@ class clienteController extends Controller
             "updated_at"=>Carbon::now()
         ]);
 
+        $usuario=$request->input('txtnombre');
+        session()->flash('exito','Se guardo el usuario: '.$usuario);
         return to_route('rutaFormulario');
     }
 

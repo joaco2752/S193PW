@@ -16,9 +16,7 @@
     <div class="container mt-5 col-md-6">
 
 
-        @if(session('exito'))
-        <x-Alert tipo="warning"> {{ session('exito')}} </x-Alert>
-        @endif
+    
 
         @session('exito')
         <x-Alert tipo="warning"> {{ $value}} </x-Alert>
