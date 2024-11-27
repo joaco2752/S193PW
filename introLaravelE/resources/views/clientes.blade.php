@@ -4,21 +4,24 @@
 
 @section('contenido')
 
-
+    
 
     {{-- Inicia tarjetaCliente --}}
     <div class="container mt-5 col-md-8">
 
+    @foreach ($consulta as $cliente)
+    
+
     <div class="card text-justify font-monospace">
 
         <div class="card-header fs-5 text-primary">
-            Joaquin Alejandro Romo Zarraga
+            {{$cliente->nombre }} - {{$cliente->apellido }}
 
         </div>
 
         <div class="card-body">
-            <h5 class="fw-bold"> romo.joaquin9999@outlook.com</h5>
-            <h5 class="fw-medium">4428235434</h5>
+            <h5 class="fw-bold"> {{$cliente->correo }}</h5>
+            <h5 class="fw-medium">{{$cliente->telefono }}</h5>
             <p class="card-text fw-lighter"> </p>
 
 
@@ -29,6 +32,7 @@
             <button type="submit" class="btn btn-danger btn-sm">{{__('Delete')}}</button>
         </div>
     </div>
+    @endforeach
     {{-- Finaliza tarjetaCliente --}}
 
 @endsection()

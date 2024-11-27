@@ -18,10 +18,10 @@
                 <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('rutaFormulario')?'text-warning':'' }}" aria-current="page" href="{{ route('rutaFormulario')}}">Registro Clientes</a>
+                    <a class="nav-link {{ request()->routeIs('cliente.create')?'text-warning':'' }}" aria-current="page" href="{{ route('cliente.create')}}">Registro Clientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('rutaClientes')}}">Consulta Clientes</a>
+                    <a class="nav-link" {{ request()->routeIs('cliente.index')?'text-warning':'' }}" href="{{ route('cliente.index')}}">Consulta Clientes</a>
                 </li>
 
                 </ul>
