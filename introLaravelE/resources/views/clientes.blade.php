@@ -65,7 +65,7 @@
             
             <script>
                 function confirmarEliminacion(nombre) {
-                    return confirm('¿Está seguro de que desea ELIMINAR los datos del cliente {{$cliente->nombre}}?');
+                    return confirm(`¿Está seguro de que desea ELIMINAR los datos del cliente ${nombre}?`);
                 }
             </script>
     {{-- Finaliza tarjetaCliente --}}
